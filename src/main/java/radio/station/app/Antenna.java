@@ -9,7 +9,6 @@ public class Antenna
 
 	public Antenna(String manufacturer, String model, String type)
 	{
-		super();
 		this.manufacturer = manufacturer;
 		this.model = model;
 		this.type = type;

@@ -10,7 +10,6 @@ public class Operator
 
 	public Operator(String firstName, String lastName, String callsign, String association)
 	{
-		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.callsign = callsign;
@@ -19,7 +18,6 @@ public class Operator
 
 	public Operator(String association)
 	{
-		super();
 		this.association = association;
 	}
 

@@ -8,7 +8,6 @@ public class Transceiver {
 
 	public Transceiver(String manufacturer, String model)
 	{
-		super();
 		this.manufacturer = manufacturer;
 		this.model = model;
 	}

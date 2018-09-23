@@ -8,22 +8,20 @@ public class Amplifier
 
 	public Amplifier(String manufacturer, String model)
 	{
-		super();
 		this.manufacturer = manufacturer;
 		this.model = model;
 	}
 
 	public Amplifier(String model)
 	{
-		super();
 		this.model = model;
 	}
 
 	public String checkPower(String value)
 	{
-		String maxPower = value;
+		String maxPower;
 		
-		if (value == "AL-1500")
+		if (value.equals("AL-1500"))
 		{
 			maxPower = "2500";
 		}

@@ -7,19 +7,17 @@ public class RadioStation
 {
 	private String stationCall;
 	private Operator operator;
-	private ArrayList<Amplifier> amplifiers = new ArrayList<Amplifier>();
-	private ArrayList<Antenna> antennas = new ArrayList<Antenna>();
-	private ArrayList<Transceiver> transceivers = new ArrayList<Transceiver>();
+	private ArrayList<Amplifier> amplifiers = new ArrayList<>();
+	private ArrayList<Antenna> antennas = new ArrayList<>();
+	private ArrayList<Transceiver> transceivers = new ArrayList<>();
 
 	public RadioStation(String stationCall)
 	{
-		super();
 		this.stationCall = stationCall; 
 	}
 
 	public RadioStation(String stationCall, Operator operator)
 	{
-		super();
 		this.stationCall = stationCall;
 		this.operator = operator;
 	}
