@@ -1,8 +1,9 @@
-
 package radio.station.app;
+
 
 public class Amplifier
 {
+
 	private String manufacturer;
 	private String model;
 
