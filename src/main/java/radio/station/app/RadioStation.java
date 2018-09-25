@@ -1,8 +1,11 @@
-
 package radio.station.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
+
+@Component
 public class RadioStation
 {
 	private String stationCall;
@@ -22,7 +25,7 @@ public class RadioStation
 		this.operator = operator;
 	}
 
-	public String getstationCall()
+    public String getstationCall()
 	{
 		return stationCall;
 	}
@@ -37,6 +40,7 @@ public class RadioStation
 		return operator;
 	}
 
+	@Autowired
 	public void setOperator(Operator operator)
 	{
 		this.operator = operator;
@@ -47,6 +51,7 @@ public class RadioStation
 		return amplifiers;
 	}
 
+	@Autowired
 	public void setAmplifiers(ArrayList<Amplifier> amplifiers)
 	{
 		this.amplifiers = amplifiers;
@@ -57,6 +62,7 @@ public class RadioStation
 		return antennas;
 	}
 
+	@Autowired
 	public void setAntennas(ArrayList<Antenna> antennas)
 	{
 		this.antennas = antennas;
@@ -67,6 +73,7 @@ public class RadioStation
 		return transceivers;
 	}
 
+    @Autowired
 	public void setTrancievers(ArrayList<Transceiver> trancievers)
 	{
 		this.transceivers = trancievers;
